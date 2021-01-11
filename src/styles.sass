@@ -1,0 +1,27 @@
+@import '/src/settings/normalize.css'
+@import 'src/fonts/fonts'
+@import 'src/settings/vars'
+@import 'src/settings/mixins'
+
+*
+  margin: 0
+  box-sizing: border-box
+
+body
+  +text
+
+a
+  -webkit-tap-highlight-color: transparent
+  text-decoration: none
+  color: $text
+
+button
+  -webkit-tap-highlight-color: transparent
+  border: none
+  background-color: transparent
+  &:hover
+    cursor: pointer
+  &:active
+    outline: none
+  &:focus
+    outline: none
