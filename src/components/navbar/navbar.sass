@@ -1,0 +1,18 @@
+@import 'src/settings/vars'
+@import 'src/settings/mixins'
+
+.navbar
+  min-height: 70px
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  +s
+    justify-content: space-between
+
+  &__link
+    margin-left: 2rem
+    color: white
+    text-transform: uppercase
+    +regular
+    +s
+      margin-left: 0

@@ -1,0 +1,22 @@
+@import 'src/settings/vars'
+@import 'src/settings/mixins'
+
+.hero
+  height: 100vh
+  background: center / cover no-repeat url('./hero-bg.jpg')
+  color: white
+  letter-spacing: 0.1em
+  text-align: center
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  padding: 20px
+  &__title
+    margin-top: 70px
+    font-size: 72px
+    +regular
+  &__subtitle
+    font-size: 20px
+    +m
+      display: none

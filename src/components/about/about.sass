@@ -1,0 +1,51 @@
+@import 'src/settings/vars'
+@import 'src/settings/mixins'
+
+.about
+  height: 100vh
+  display: flex
+  flex-direction: column
+  justify-content: space-evenly
+  &-title
+    display: flex
+    flex-direction: column
+    text-transform: uppercase
+    letter-spacing: 0.1em
+    &__bold
+      font-size: 36px
+      +bold
+    &__light
+      font-size: 42px
+      font-weight: 300
+  &-subtitle
+    &-first
+      margin-left: 35px
+      line-height: 1.6em
+      letter-spacing: 0.09em
+      font-weight: 300
+      width: 270px
+      +xs
+        width: calc(100% - 35px)
+      &::before
+        position: absolute
+        content: "—"
+        font-size: 1.5rem
+        transform: translate(-35px, 2px)
+        +bold
+    &-second
+      line-height: 1.6em
+      letter-spacing: 0.09em
+      font-weight: 300
+      width: 270px
+      align-self: flex-end
+      +s
+        align-self: flex-start
+        margin-left: 35px
+      +xs
+        width: calc(100% - 35px)
+      &::before
+        position: absolute
+        content: "—"
+        font-size: 1.5rem
+        transform: translate(-35px, 2px)
+        +bold
