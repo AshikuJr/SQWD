@@ -2,13 +2,18 @@
 @import 'src/settings/mixins'
 
 .navbar
-  min-height: 70px
-  display: flex
-  align-items: center
-  justify-content: flex-end
-  +s
-    justify-content: space-between
-
+  position: fixed
+  top: 0
+  width: 100%
+  z-index: 1000
+  background-color: rgba(black, 0.4)
+  &-wrap
+    min-height: 50px
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    +s
+      justify-content: space-between
   &__link
     margin-left: 2rem
     color: white
