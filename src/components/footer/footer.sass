@@ -1,0 +1,66 @@
+@import 'src/settings/vars'
+@import 'src/settings/mixins'
+
+.footer
+  display: grid
+  min-height: 600px
+  grid-template-columns: 1fr 1fr
+  grid-template-areas: 'w c' 's s'
+  +s
+    grid-template-columns: 1fr
+    grid-template-areas: 'w' 'c' 's'
+  &-title
+    font-size: 24px
+    line-height: 1.5em
+    letter-spacing: 0.15em
+    font-weight: bold
+    +regular
+  &-text
+    font-size: 14px
+    line-height: 1.3em
+    letter-spacing: 0.15em
+    opacity: 0.6
+    +text
+  &-work
+    grid-area: w
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+    justify-content: space-evenly
+    padding: 80px 0
+    background-color: $bg-dark
+    +s
+      padding: 20px 0
+  &-contact
+    grid-area: c
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+    justify-content: space-evenly
+    padding: 80px 0
+    background-color: $main-green
+    color: white
+    +s
+      padding: 20px 0
+  &-socials
+    grid-area: s
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+    justify-content: space-evenly
+    padding: 80px 0
+    background-color: $headers
+    color: $bg-dark
+    +s
+      padding: 20px 0
+    &__icons
+      margin-top: 30px
+      width: 140px
+      display: flex
+      justify-content: space-between
+      a
+        &:hover
+          filter: opacity(0.5)

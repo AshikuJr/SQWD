@@ -15,7 +15,7 @@ const ServiceBlock = props => {
 };
 
 const Services = props => {
-  return <section className="services">
+  return <section className="services" id='services'>
     <Container content={
       <div className="services-wrap">
         <h2 className="services-title">Our Services</h2>

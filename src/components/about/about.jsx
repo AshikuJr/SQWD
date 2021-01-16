@@ -4,7 +4,7 @@ import './about.sass';
 import Container from '../container/container.jsx';
 
 const About = props => {
-  return <section className="about">
+  return <section className="about" id='about'>
     <Container content={
       <div className="about-wrap">
         <h2 className="about-title">

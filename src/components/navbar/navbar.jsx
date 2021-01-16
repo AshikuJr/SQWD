@@ -11,11 +11,11 @@ const Navbar = props => {
   return <nav className="navbar">
     <Container content={
       <div className='navbar-wrap'>
-        <NavbarLink href='#' text='works'/>
-        <NavbarLink href='#' text='about'/>
-        <NavbarLink href='#' text='services'/>
-        <NavbarLink href='#' text='blog'/>
-        <NavbarLink href='#' text='contact'/>
+        <NavbarLink href='#about' text='about'/>
+        <NavbarLink href='#services' text='services'/>
+        <NavbarLink href='#works' text='works'/>
+        <NavbarLink href='#team' text='team'/>
+        <NavbarLink href='#contact' text='contact'/>
       </div>
     }/>
   </nav>
