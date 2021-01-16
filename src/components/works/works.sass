@@ -30,6 +30,7 @@
     text-decoration: line-through $main-green solid 3px
     +xs
       width: 240px
+      font-size: 40px
     +light
     &_crossed
       text-decoration: none
@@ -61,7 +62,6 @@
   &-image
     margin-bottom: 15px
     width: 450px
-
   &-link
     font-size: 13px
     letter-spacing: 0.1em
@@ -73,6 +73,8 @@
   position: relative
   background-color: $bg-light
   padding: 170px 0
+  +s
+    overflow: hidden
   &-wrap
     min-height: 100vh
     display: grid
@@ -105,6 +107,8 @@
     display: flex
     justify-content: space-between
     align-items: center
+    +s
+      font-size: 10px
     button
       text-transform: uppercase
       opacity: 0.5

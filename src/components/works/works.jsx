@@ -27,7 +27,7 @@ const Works = props => {
           <h2 className="works-title">Latest Works</h2>
           <div className="works-navs">
             <button onClick = {() => setCurrent('a')}>all</button>
-            <button onClick = {() => setCurrent('d')}>web design</button>
+            <button onClick = {() => setCurrent('d')}>design</button>
             <button onClick = {() => setCurrent('b')}>branding</button>
             <button onClick = {() => setCurrent('p')}>photography</button>
             <button onClick = {() => setCurrent('i')}>illustration</button>
