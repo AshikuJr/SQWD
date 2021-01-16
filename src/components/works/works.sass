@@ -1,0 +1,114 @@
+@import 'src/settings/vars'
+@import 'src/settings/mixins'
+
+.work
+  width: 450px
+  display: flex
+  flex-direction: column
+  align-items: center
+  +l
+    width: 300px
+  &_left
+    margin-top: -100px
+    justify-self: end
+    +m
+      margin-top: -100px
+      justify-self: center
+  &_right
+    margin-top: -400px
+    justify-self: start
+    +m
+      margin-top: 0px
+      justify-self: center
+  &-title
+    margin-bottom: -50px
+    font-size: 48px
+    line-height: 1.6em
+    letter-spacing: 0.06em
+    text-transform: uppercase
+    width: 300px
+    text-decoration: line-through $main-green solid 3px
+    +xs
+      width: 240px
+    +light
+    &_crossed
+      text-decoration: none
+    &_left
+      text-align: right
+      transform: translate(-200px, 370px)
+      +l
+        transform: translate(-150px, 370px)
+      +s
+        transform: translate(0, 370px)
+    &_right
+      text-align: left
+      transform: translate(200px, 370px)
+      +l
+        transform: translate(150px, 370px)
+      +s
+        transform: translate(0, 370px)
+  &-genre
+    text-transform: capitalize
+    font-size: 18px
+    letter-spacing: 0.08em
+  &-descr
+    margin-top: 20px
+    margin-bottom: 20px
+    font-size: 13px
+    line-height: 23px
+    letter-spacing: 0.06em
+    color: rgba($text, 0.5)
+  &-image
+    margin-bottom: 15px
+    width: 450px
+
+  &-link
+    font-size: 13px
+    letter-spacing: 0.1em
+    text-transform: uppercase
+    text-decoration: line-through $main-green solid 2px
+    &_crossed
+      text-decoration: none
+.works
+  position: relative
+  background-color: $bg-light
+  padding: 170px 0
+  &-wrap
+    min-height: 100vh
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-column-gap: 100px
+    grid-row-gap: 40px
+    grid-template-areas: 'c .'
+    grid-auto-flow: dense
+    align-items: start
+    +m
+      grid-template-columns: 1fr
+      grid-template-areas: 'c'
+  &-control
+    grid-area: c
+  &-title
+    font-size: 48px
+    line-height: 1.6em
+    letter-spacing: 0.06em
+    +bold
+    &::after
+      position: absolute
+      transform: translate(-280px, 80px)
+      content: ''
+      min-height: 2px
+      min-width: 45px
+      background-color: $headers
+  &-navs
+    margin-top: 40px
+    font-size: 13px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    button
+      text-transform: uppercase
+      opacity: 0.5
+      &:hover
+        opacity: 1
+      &:focus
+        opacity: 1

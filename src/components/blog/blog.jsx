@@ -16,8 +16,8 @@ const Post = props => {
       <span className="blog-post__position">{props.position}</span>
     </p>
     <div className="blog-post__rate">
-      {[1,2,3,4,5].map(number => {
-        if (number <= props.rate) return <img src={starActive} alt='+'/>
+      {[1,2,3,4,5].map((number, index) => {
+        if ((number) <= props.rate) return <img key={index} src={starActive} alt='+'/>
         else return <img src={starInactive} alt='-'/>
       })}
     </div>

@@ -6,7 +6,7 @@ import Hero from './hero/hero.jsx';
 import About from './about/about.jsx';
 import AboutBG from './aboutbg/aboutbg.jsx';
 import Services from './services/services.jsx';
-
+import Works from './works/works.jsx';
 import Team from './team/team.jsx';
 import Blog from './blog/blog.jsx';
 import Footer from './footer/footer.jsx';
@@ -18,7 +18,7 @@ const App = () => {
     <About/>
     <AboutBG/>
     <Services/>
-
+    <Works/>
     <Team/>
     <Blog/>
     <Footer/>
