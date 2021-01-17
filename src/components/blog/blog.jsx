@@ -4,6 +4,8 @@ import './blog.sass';
 import quote from './quote.svg';
 import starActive from './star-active.svg';
 import starInactive from './star-inactive.svg';
+import next from './next.svg';
+import prev from './prev.svg';
 
 import Container from '../container/container.jsx';
 
@@ -37,7 +39,9 @@ const Blog = props => {
       <div className="blog-wrap">
         <button className="blog-control" onClick={() => {
           if (current > 0) setCurrent(current - 1);
-        }}>🡐</button>
+        }}>
+          <img src={prev} alt="prev"/>
+        </button>
         <BlogSlider current = {current}
         children = {[
           <Post 
@@ -58,7 +62,9 @@ const Blog = props => {
         ]}/>
         <button className="blog-control" onClick={() => {
           if (current < 2) setCurrent(current + 1);
-        }}>🡒</button>
+        }}>
+          <img src={next} alt="next"/>
+        </button>
       </div>
     }/>
   </section>
