@@ -24,17 +24,17 @@ const Services = props => {
           title='branding'
           icon = {icon}
           text='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.'
-          link='#'/>
+          link='https://ashikujr.github.io/resume/dist/index.html'/>
           <ServiceBlock 
           title='design'
           icon = {icon}
           text='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.'
-          link='#'/>
+          link='https://ashikujr.github.io/resume/dist/index.html'/>
           <ServiceBlock 
           title='development'
           icon = {icon}
           text='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.'
-          link='#'/>
+          link='https://ashikujr.github.io/resume/dist/index.html'/>
         </div>
       </div>
     }/>

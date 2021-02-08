@@ -25,9 +25,9 @@ const Footer = props => {
       <span className="footer-text">(359) 0 123 456 789 - info@yourmail.com
       </span>
       <div className="footer-socials__icons">
-        <a href="ashikujr.github.io/resume/"><img src={facebook} alt="facebook"/></a>
-        <a href="ashikujr.github.io/resume/"><img src={twitter} alt="facebook"/></a>
-        <a href="ashikujr.github.io/resume/"><img src={pinterest} alt="facebook"/></a>
+        <a href="https://ashikujr.github.io/resume/dist/index.html"><img src={facebook} alt="facebook"/></a>
+        <a href="https://ashikujr.github.io/resume/dist/index.html"><img src={twitter} alt="facebook"/></a>
+        <a href="https://ashikujr.github.io/resume/dist/index.html"><img src={pinterest} alt="facebook"/></a>
       </div>
     </div>
   </footer>

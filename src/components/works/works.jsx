@@ -14,7 +14,7 @@ const Work = props => {
     <img src={props.img} alt="" className="work-image"/>
     <span className="work-genre">{props.genre}</span>
     <p className='work-descr'>{props.descr}</p>
-    <a className={(props.state === 'active') ? 'work-link' : 'work-link work-link_crossed'} href="ashikujr.github.io/resume/">read more</a>
+    <a className={(props.state === 'active') ? 'work-link' : 'work-link work-link_crossed'} href="https://ashikujr.github.io/resume/dist/index.html">read more</a>
   </div>
 };
 
